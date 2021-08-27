@@ -23,12 +23,12 @@ export default function Navigation() {
                   : ' hover:text-metanoiaYellow'
               }`}
             >
-              Products
+              Sản phẩm
             </a>
           </Link>
         </li>
         <li>
-          <Link href='/collections'>
+          <Link href='/collections/sun-lust'>
             <a
               className={`p-1 ${
                 path[1] === 'collections'
@@ -36,7 +36,7 @@ export default function Navigation() {
                   : ' hover:text-metanoiaYellow'
               }`}
             >
-              Collections
+              Bộ sưu tập
             </a>
           </Link>
         </li>

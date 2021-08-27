@@ -50,7 +50,7 @@ const DropdownMenu = () => {
           <Link href='/products'>
             <a className='p-3 hover:text-metanoiaYellow'>Products</a>
           </Link>
-          <Link href='/collections'>
+          <Link href='/collections/sun-lust'>
             <a className='p-3 hover:text-metanoiaYellow'>Collections</a>
           </Link>
           <Link href='/about'>

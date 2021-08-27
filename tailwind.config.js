@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -16,6 +17,10 @@ module.exports = {
         prompt: "'Prompt', serif",
         dancingScript: "'Dancing Script', serif",
       },
+    },
+    screens: {
+      xs: '470px',
+      ...defaultTheme.screens,
     },
   },
   variants: {
