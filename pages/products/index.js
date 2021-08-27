@@ -34,9 +34,7 @@ export default function ProductsPage({ productsString }) {
             } flex flex-col justify-end items-end self-start w-full md:w-36 md:sticky md:top-14 mb-5 md:mt-0`}
           >
             <button
-              className={`lg:text-lg ${
-                category ?? 'px-1 border-2 border-black'
-              }`}
+              className={`${category ?? 'px-1 border-2 border-black'}`}
               onClick={() => {
                 setCategory(null);
                 setFilterVisible(false);
@@ -46,7 +44,7 @@ export default function ProductsPage({ productsString }) {
             </button>
 
             <button
-              className={`lg:text-lg ${
+              className={`${
                 category === 'top' && 'px-1 border-2 border-black'
               }`}
               onClick={() => {
@@ -58,7 +56,7 @@ export default function ProductsPage({ productsString }) {
             </button>
 
             <button
-              className={`lg:text-lg ${
+              className={`${
                 category === 'skirt' && 'px-1 border-2 border-black'
               }`}
               onClick={() => {
@@ -70,7 +68,7 @@ export default function ProductsPage({ productsString }) {
             </button>
 
             <button
-              className={`lg:text-lg ${
+              className={`${
                 category === 'dress' && 'px-1 border-2 border-black'
               }`}
               onClick={() => {

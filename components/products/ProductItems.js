@@ -15,7 +15,7 @@ export default function ProductItems({ productsString, chosenCategory }) {
     <>
       {products.map((product) => {
         return (
-          <Link key={product.src} href={`/products/${product.slug}`}>
+          <Link key={product.slug} href={`/products/${product.slug}`}>
             <a>
               <div className='longImage relative max-w-2xl w-full'>
                 <ImageWithBlur
@@ -30,10 +30,18 @@ export default function ProductItems({ productsString, chosenCategory }) {
                   objectFit='cover'
                 />
               </div>
-              <div className='font-light sm:text-lg mt-1'>{product.name}</div>
-              <div className='font-light text-sm sm:text-base'>
-                {toVND(product.price)} ₫
-              </div>
+              <h2 className='font-normal sm:text-base mt-1'>{product.name}</h2>
+              <h5 className='font-light text-sm sm:text-base inline'>
+                {product.discountPrice && product.discountPrice > 0
+                  ? toVND(product.discountPrice)
+                  : toVND(product.price)}{' '}
+                ₫{' '}
+              </h5>
+              {product.discountPrice && product.discountPrice > 0 && (
+                <h5 className='font-light text-sm sm:text-base inline line-through text-red-600'>
+                  {toVND(product.price)} ₫
+                </h5>
+              )}
             </a>
           </Link>
         );

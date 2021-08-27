@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Layout from '@/components/Layout';
 import CollectionInformation from '@/components/collections/CollectionInformation';
-import CollectionImages from '@/components/collections/CollectionImages';
+import ImagesList from '@/components/ImagesList';
 import { API_URL } from '@/utils/config';
 
 export default function CollectionPage({ collection }) {
@@ -33,14 +33,14 @@ export default function CollectionPage({ collection }) {
         <div className='flex flex-col lg:flex-row justify-center items-center'>
           <div className='flex flex-col w-full sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0'>
             <div className='w-full sm:w-1/2 mt-5 sm:mt-20 space-y-4'>
-              <CollectionImages
+              <ImagesList
                 imagesString={JSON.stringify(images)}
                 start={0}
                 stop={images.length / 2 - 1}
               />
             </div>
             <div className='w-full sm:w-1/2 space-y-4'>
-              <CollectionImages
+              <ImagesList
                 imagesString={JSON.stringify(images)}
                 start={images.length / 2}
                 stop={images.length - 1}
