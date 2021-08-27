@@ -48,8 +48,8 @@ export default function CollectionPage({ collection }) {
             </div>
           </div>
           <div className='flex flex-col text-right self-start w-full lg:w-56 lg:sticky lg:top-14 lg:ml-5 mt-5 lg:mt-0'>
-            <h3 className='lg:text-lg font-semibold'>Bộ sưu tập khác</h3>
-            <h3 className='text-sm lg:text-base'>Coming soon...</h3>
+            <h4 className='lg:text-lg font-semibold'>Bộ sưu tập khác</h4>
+            <h4 className='text-sm lg:text-base'>Coming soon...</h4>
           </div>
         </div>
       </div>

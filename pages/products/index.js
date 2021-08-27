@@ -2,15 +2,16 @@ import axios from 'axios';
 import Layout from '@/components/Layout';
 import ProductItems from '@/components/products/ProductItems';
 import { API_URL } from '@/utils/config';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ProductsPage({ productsString }) {
   const [category, setCategory] = useState(null);
   const [filterVisible, setFilterVisible] = useState(false);
+
   return (
     <Layout
       title={`Metanoia | Products`}
-      description={`Các sản phẩm váy, áo, đầm... METANOIA - Thời trang dành cho plus-sized và curvy`}
+      description={`Các sản phẩm áo, váy, đầm... METANOIA - Thời trang dành cho plus-sized và curvy`}
     >
       <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>
         <div className='flex flex-col-reverse md:flex-row justify-center items-center w-full'>
@@ -31,7 +32,7 @@ export default function ProductsPage({ productsString }) {
           <div
             className={`${
               !filterVisible && 'hidden md:flex'
-            } flex flex-col justify-end items-end self-start w-full md:w-36 md:sticky md:top-14 mb-5 md:mt-0`}
+            } flex flex-col justify-end items-end self-start w-full md:w-52 md:sticky md:top-14 mb-5 md:mt-0`}
           >
             <button
               className={`${category ?? 'px-1 border-2 border-black'}`}
@@ -57,10 +58,10 @@ export default function ProductsPage({ productsString }) {
 
             <button
               className={`${
-                category === 'skirt' && 'px-1 border-2 border-black'
+                category === 'dress' && 'px-1 border-2 border-black'
               }`}
               onClick={() => {
-                setCategory('skirt');
+                setCategory('dress');
                 setFilterVisible(false);
               }}
             >
@@ -69,14 +70,14 @@ export default function ProductsPage({ productsString }) {
 
             <button
               className={`${
-                category === 'dress' && 'px-1 border-2 border-black'
+                category === 'skirt' && 'px-1 border-2 border-black'
               }`}
               onClick={() => {
-                setCategory('dress');
+                setCategory('skirt');
                 setFilterVisible(false);
               }}
             >
-              Đầm
+              Chân váy
             </button>
           </div>
         </div>

@@ -12,14 +12,14 @@ export default function ProductInformation({
     <>
       <h2 className='text-left text-lg font-medium'>{name}</h2>
       <div className='text-left mt-1'>
-        <h5 className='font-light text-sm sm:text-base inline'>
+        <h5 className='font-normal lg:text-lg inline'>
           {discountPrice && discountPrice > 0
             ? toVND(discountPrice)
             : toVND(price)}
           ₫{' '}
         </h5>
         {discountPrice && discountPrice > 0 && (
-          <h5 className='font-light text-sm sm:text-base inline line-through text-red-600'>
+          <h5 className='font-normal lg:text-lg inline line-through text-red-600'>
             {toVND(price)} ₫
           </h5>
         )}

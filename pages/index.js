@@ -4,7 +4,7 @@ import Layout from '@/components/Layout';
 import ImageWithBlur from '@/components/ImageWithBlur';
 import {
   carouselImages as images,
-  collectionImages,
+  homeGalleryImages,
 } from '@/utils/staticData.js';
 
 export default function Products() {
@@ -42,58 +42,67 @@ export default function Products() {
             </Link>
           </div>
         </div>
-        <div className='text-center space-y-2 my-8 mx-10 sm:mx-16 md:mx-32 lg:mx-52'>
-          <h2 className='text-2xl sm:text-3xl font-dancingScript'>Our Story</h2>
-          <p className='text-sm sm:text-base'>
-            Metanoia is a clothing brand that filling the gap of luxury fashion
-            for plus-size people in Vietnam. We believe plus-size clothes is not
-            just bigger size but should make us feel as remarkable as we are.
-          </p>
+        <div className='flex justify-center items-center font-dancingScript text-6xl sm:text-7xl mg:text-8xl font-semibold w-full text-center h-36 bg-metanoiaYellow'>
+          You're not fat!
         </div>
-        <div className='mx-5 xs:mx-10 lg:mx-24 md:mt-10'>
+        <div className='mx-5 xs:mx-10 lg:mx-24 mt-10'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6'>
-            <h3 className='text-3xl sm:text-4xl md:text-5xl font-dancingScript font-semibold sm:self-center sm:col-span-2 pb-5'>
-              Sun Lust Collection
+            <h3 className='font-dancingScript font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl sm:self-center sm:col-span-2 sm:pb-5'>
+              You're beautiful!
             </h3>
-            <p className='text-sm sm:text-base sm:col-start-2 sm:row-start-2 lg:col-start-1 text-right lg:text-left self-center lg:self-baseline'>
-              Metanoia is a clothing brand
-            </p>
-            <div className='longImage relative max-w-2xl transform-none lg:transform scale-110 -rotate-6'>
+            <h4 className='text-sm sm:text-base sm:col-start-2 sm:row-start-2 lg:col-start-1 text-right lg:text-left self-center'>
+              from Metanoia with <i className='fas fa-heart' />
+            </h4>
+            <div className='squareImage relative max-w-2xl'>
               <ImageWithBlur
                 className='absolute select-none'
-                image={collectionImages[0]}
+                image={homeGalleryImages[0]}
                 objectFit='cover'
               />
             </div>
-            <div className='longImage relative max-w-2xl transform-none lg:transform rotate-2'>
+            <div className='squareImage relative max-w-2xl'>
               <ImageWithBlur
                 className='absolute select-none'
-                image={collectionImages[1]}
+                image={homeGalleryImages[1]}
                 objectFit='cover'
               />
             </div>
-            <div className='longImage relative max-w-2xl transform-none lg:transform scale-75 -rotate-6 translate-x-2 translate-y-15'>
+            <div className='squareImage relative max-w-2xl'>
               <ImageWithBlur
                 className='absolute select-none'
-                image={collectionImages[2]}
+                image={homeGalleryImages[2]}
                 objectFit='cover'
               />
             </div>
-            <div className='longImage relative max-w-2xl transform-none lg:transform -translate-y-24 -rotate-3'>
+            <div className='squareImage relative max-w-2xl'>
               <ImageWithBlur
                 className='absolute select-none'
-                image={collectionImages[3]}
+                image={homeGalleryImages[3]}
                 objectFit='cover'
               />
             </div>
-            <div className='longImage relative max-w-2xl hidden lg:inline transform-none lg:transform translate-x-10 -translate-y-4 scale-75 rotate-3'>
+            <div className='squareImage relative max-w-2xl'>
               <ImageWithBlur
                 className='absolute select-none'
-                image={collectionImages[4]}
+                image={homeGalleryImages[5]}
                 objectFit='cover'
               />
             </div>
-            <p className='text-sm sm:text-base self-center text-right'>
+            <div className='squareImage relative max-w-2xl'>
+              <ImageWithBlur
+                className='absolute select-none'
+                image={homeGalleryImages[4]}
+                objectFit='cover'
+              />
+            </div>
+            <div className='squareImage relative max-w-2xl sm:hidden lg:inline'>
+              <ImageWithBlur
+                className='absolute select-none'
+                image={homeGalleryImages[6]}
+                objectFit='cover'
+              />
+            </div>
+            <p className='text-sm sm:text-base self-center text-right lg:col-span-2'>
               Hanoi, 2021
             </p>
           </div>

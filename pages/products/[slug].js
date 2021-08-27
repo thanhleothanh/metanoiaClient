@@ -9,8 +9,8 @@ export default function ProductPage({ product }) {
     JSON.parse(product);
   return (
     <Layout
-      title={`Metanoia | Product`}
-      description={`Product, METANOIA - Thời trang dành cho plus-sized và curvy`}
+      title={`Metanoia | ${name}`}
+      description={`METANOIA - Thời trang dành cho plus-sized và curvy, ${name}`}
     >
       <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>
         <div className='flex flex-col md:flex-row justify-center items-center'>
