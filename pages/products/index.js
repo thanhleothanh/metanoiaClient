@@ -1,14 +1,12 @@
 import axios from 'axios';
-import Link from 'next/link';
 import Layout from '@/components/Layout';
 import ProductItems from '@/components/products/ProductItems';
-import DropdownCategory from '@/components/products/DropdownCategory';
 import { API_URL } from '@/utils/config';
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 export default function ProductsPage({ productsString }) {
-  const { category } = useRouter().query;
-
+  const [category, setCategory] = useState(null);
+  const [filterVisible, setFilterVisible] = useState(false);
   return (
     <Layout
       title={`Metanoia | Products`}
@@ -22,58 +20,66 @@ export default function ProductsPage({ productsString }) {
               chosenCategory={category}
             />
           </div>
-          <div className='hidden md:flex flex-col text-right self-start w-full md:w-36 md:sticky md:top-14 mt-5 md:mt-0'>
-            <Link href='/products'>
-              <a
-                className={`lg:text-lg ${
-                  category ?? 'font-semibold underline'
-                }`}
-              >
-                Tất cả
-              </a>
-            </Link>
-            <Link
-              href={{
-                pathname: '/products',
-                query: { category: 'top' },
+          <button
+            className={`flex justify-end items-end w-full mb-5 md:hidden ${
+              filterVisible && 'hidden'
+            }`}
+            onClick={() => setFilterVisible(!filterVisible)}
+          >
+            <i className='fas fa-filter fa-lg' />
+          </button>
+          <div
+            className={`${
+              !filterVisible && 'hidden md:flex'
+            } flex flex-col justify-end items-end self-start w-full md:w-36 md:sticky md:top-14 mb-5 md:mt-0`}
+          >
+            <button
+              className={`lg:text-lg ${
+                category ?? 'px-1 border-2 border-black'
+              }`}
+              onClick={() => {
+                setCategory(null);
+                setFilterVisible(false);
               }}
             >
-              <a
-                className={`lg:text-lg ${
-                  category === 'top' && 'font-semibold underline'
-                }`}
-              >
-                Áo
-              </a>
-            </Link>
-            <Link
-              href={{
-                pathname: '/products',
-                query: { category: 'skirt' },
+              Tất cả
+            </button>
+
+            <button
+              className={`lg:text-lg ${
+                category === 'top' && 'px-1 border-2 border-black'
+              }`}
+              onClick={() => {
+                setCategory('top');
+                setFilterVisible(false);
               }}
             >
-              <a
-                className={`lg:text-lg ${
-                  category === 'skirt' && 'font-semibold underline'
-                }`}
-              >
-                Váy
-              </a>
-            </Link>
-            <Link
-              href={{
-                pathname: '/products',
-                query: { category: 'dress' },
+              Áo
+            </button>
+
+            <button
+              className={`lg:text-lg ${
+                category === 'skirt' && 'px-1 border-2 border-black'
+              }`}
+              onClick={() => {
+                setCategory('skirt');
+                setFilterVisible(false);
               }}
             >
-              <a
-                className={`lg:text-lg ${
-                  category === 'dress' && 'font-semibold underline'
-                }`}
-              >
-                Đầm
-              </a>
-            </Link>
+              Váy
+            </button>
+
+            <button
+              className={`lg:text-lg ${
+                category === 'dress' && 'px-1 border-2 border-black'
+              }`}
+              onClick={() => {
+                setCategory('dress');
+                setFilterVisible(false);
+              }}
+            >
+              Đầm
+            </button>
           </div>
         </div>
       </div>
