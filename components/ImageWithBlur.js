@@ -6,7 +6,7 @@ const ImageWithBlur = ({ className, image, objectFit }) => {
   return (
     <>
       <BlurhashCanvas
-        hash={image.blurhash ?? defaultHash}
+        hash={image && image.blurhash ?? defaultHash}
         className='absolute w-full h-full object-cover'
       />
       <Image

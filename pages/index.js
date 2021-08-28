@@ -81,7 +81,7 @@ export default function Products() {
             >
               <ImageWithBlur
                 className='absolute select-none'
-                src={homeGalleryImages[0]}
+                image={homeGalleryImages[0]}
                 layout='fill'
                 objectFit='cover'
               />
