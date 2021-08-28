@@ -16,6 +16,7 @@ export default function Products() {
                 src: '/metanoia.jpg',
                 blurhash: 'L5P?mqt7~WxaxafQt7fQ~pj[4oay',
               }}
+              layout='fill'
               objectFit='cover'
             />
           </div>

@@ -14,6 +14,7 @@ export default function ImagesList({ imagesString, start, stop }) {
               <ImageWithBlur
                 className='absolute select-none'
                 image={image}
+                layout='fill'
                 objectFit='cover'
               />
             </div>

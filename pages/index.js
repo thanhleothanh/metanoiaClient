@@ -33,7 +33,7 @@ export default function Products() {
       title='Metanoia'
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
-      <div className='h-auto min-h-screen w-full mb-6'>
+      <div className='inset-0 h-auto min-h-screen w-full mb-6'>
         <div className='relative flex justify-center items-center h-screen'>
           {image && (
             <ImageWithBlur
@@ -73,16 +73,16 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='squareImage max-w-2xl'
+              className='squareImage relative max-w-2xl'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.5s`,
-                position: 'relative',
               }}
             >
               <ImageWithBlur
                 className='absolute select-none'
-                image={homeGalleryImages[0]}
+                src={homeGalleryImages[0]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>
@@ -96,6 +96,7 @@ export default function Products() {
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[1]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>
@@ -109,6 +110,7 @@ export default function Products() {
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[2]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>
@@ -122,6 +124,7 @@ export default function Products() {
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[3]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>
@@ -135,6 +138,7 @@ export default function Products() {
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[4]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>
@@ -148,6 +152,7 @@ export default function Products() {
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[5]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>
@@ -161,6 +166,7 @@ export default function Products() {
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[6]}
+                layout='fill'
                 objectFit='cover'
               />
             </div>

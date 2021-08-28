@@ -21,6 +21,7 @@ export default function ProductItems({ productsString, chosenCategory }) {
                 <ImageWithBlur
                   className='absolute select-none'
                   image={product.images[0]}
+                  layout='fill'
                   objectFit='cover'
                 />
                 <Image
