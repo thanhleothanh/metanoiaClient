@@ -33,7 +33,7 @@ export default function Products() {
       title='Metanoia'
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
-      <div className='inset-0 h-auto min-h-screen w-full mb-6'>
+      <div className='h-auto min-h-screen w-full mb-6'>
         <div className='relative flex justify-center items-center h-screen'>
           {image && (
             <ImageWithBlur
@@ -73,21 +73,19 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage lg:wideImage relative max-w-2xl'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.5s`,
               }}
             >
-              <ImageWithBlur
+              <img
                 className='absolute select-none'
-                image={homeGalleryImages[0]}
-                layout='fill'
-                objectFit='cover'
+                src={homeGalleryImages[0].src}
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage lg:wideImage relative max-w-2xl'
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
                 transition: `transform 0.5s`,
@@ -103,7 +101,7 @@ export default function Products() {
             <div
               className='squareImage relative max-w-2xl'
               style={{
-                transform: `translate(-${offset / 90}px, -${offset / 90}px)`,
+                transform: `translate(0px, ${offset / 90}px)`,
                 transition: `transform 0.5s`,
               }}
             >
@@ -117,7 +115,7 @@ export default function Products() {
             <div
               className='squareImage relative max-w-2xl'
               style={{
-                transform: `translate(-${offset / 95}px, ${offset / 95}px)`,
+                transform: `translate(0px, ${offset / 150}px)`,
                 transition: `transform 0.5s`,
               }}
             >
@@ -131,7 +129,7 @@ export default function Products() {
             <div
               className='squareImage relative max-w-2xl'
               style={{
-                transform: `translate(${offset / 80}px, ${offset / 90}px)`,
+                transform: `translate(${offset / 80}px,0px)`,
                 transition: `transform 0.5s`,
               }}
             >
@@ -157,9 +155,9 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl sm:hidden lg:inline'
+              className='wideImage relative max-w-2xl sm:hidden lg:inline'
               style={{
-                transform: `translate(${offset / 100}px, ${offset / 100}px)`,
+                transform: `translate(${offset / 100}px, -${offset / 100}px)`,
                 transition: `transform 0.5s`,
               }}
             >
@@ -170,7 +168,13 @@ export default function Products() {
                 objectFit='cover'
               />
             </div>
-            <p className='text-sm sm:text-base self-center text-right mt-5'>
+            <p
+              className='text-sm sm:text-base self-center text-right mt-5'
+              style={{
+                transform: `translate(-${offset / 80}px, 0px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               Based in Hanoi
             </p>
           </div>

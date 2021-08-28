@@ -38,10 +38,10 @@ const DropdownMenu = () => {
       <div
         style={{
           display: `${show ? 'inline' : 'none'}`,
-          transition: '0.5s',
+          transition: 'display 0.5s',
         }}
       >
-        <div className='flex flex-col origin-top-right absolute right-0 w-32 mt-1 bg-white overflow-hidden font-medium text-right'>
+        <div className='flex flex-col origin-top-right absolute right-0 w-32 mt-1 bg-white overflow-hidden font-medium text-right border-2'>
           <Link href='/products'>
             <a className='p-3 hover:text-metanoiaYellow'>Products</a>
           </Link>
