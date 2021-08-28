@@ -73,7 +73,7 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='squareImage lg:wideImage lg:wideImage relative max-w-2xl'
+              className='squareImage sm:longImage relative max-w-2xl h-auto'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -87,7 +87,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage lg:wideImage lg:wideImage relative max-w-2xl'
+              className='squareImage relative max-w-2xl h-auto'
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -101,9 +101,9 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage relative max-w-2xl h-auto'
               style={{
-                transform: `translate(0px, ${offset / 90}px)`,
+                transform: `translate(0px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
               }}
             >
@@ -115,9 +115,9 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage relative max-w-2xl h-auto'
               style={{
-                transform: `translate(0px, ${offset / 150}px)`,
+                transform: `translate(${offset / 130}px, 0px)`,
                 transition: `transform 0.3s`,
               }}
             >
@@ -129,7 +129,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage relative max-w-2xl h-auto'
               style={{
                 transform: `translate(${offset / 80}px,0px)`,
                 transition: `transform 0.3s`,
@@ -143,7 +143,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage relative max-w-2xl h-auto'
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -157,7 +157,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='wideImage relative max-w-2xl sm:hidden lg:inline'
+              className='wideImage relative max-w-2xl h-auto sm:hidden lg:inline'
               style={{
                 transform: `translate(${offset / 100}px, -${offset / 100}px)`,
                 transition: `transform 0.3s`,

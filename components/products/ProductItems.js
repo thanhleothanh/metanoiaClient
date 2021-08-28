@@ -17,7 +17,7 @@ export default function ProductItems({ productsString, chosenCategory }) {
         return (
           <Link key={product.slug} href={`/products/${product.slug}`}>
             <a>
-              <div className='longImage relative max-w-2xl w-full'>
+              <div className='longImage relative max-w-2xl h-auto w-full'>
                 <ImageWithBlur
                   className='absolute select-none'
                   image={product.images[0]}

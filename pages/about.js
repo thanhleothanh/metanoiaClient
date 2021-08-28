@@ -9,7 +9,7 @@ export default function Products() {
     >
       <div className='h-auto min-h-screen w-full px-5 xs:px-10 mt-20 mb-6'>
         <div className='flex flex-col justify-center items-center max-w-lg mx-auto'>
-          <div className='squareImage relative w-full'>
+          <div className='squareImage relative max-w-2xl h-auto w-full'>
             <ImageWithBlur
               className='absolute select-none'
               image={{
