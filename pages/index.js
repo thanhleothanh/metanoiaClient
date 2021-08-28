@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Layout from '@/components/Layout';
 import ImageWithBlur from '@/components/ImageWithBlur';
+import Image from 'next/image';
 import {
   carouselImages as images,
   homeGalleryImages,
