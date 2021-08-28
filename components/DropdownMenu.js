@@ -41,7 +41,7 @@ const DropdownMenu = () => {
           transition: '0.5s',
         }}
       >
-        <div className='flex flex-col origin-top-right absolute right-0 w-68 mt-1 bg-white overflow-hidden font-medium'>
+        <div className='flex flex-col origin-top-right absolute right-0 w-32 mt-1 bg-white overflow-hidden font-medium text-right'>
           <Link href='/products'>
             <a className='p-3 hover:text-metanoiaYellow'>Products</a>
           </Link>

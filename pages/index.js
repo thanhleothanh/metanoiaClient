@@ -73,10 +73,11 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='squareImage relative max-w-2xl'
+              className='squareImage max-w-2xl'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.5s`,
+                position: 'relative',
               }}
             >
               <ImageWithBlur
