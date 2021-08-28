@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Layout from '@/components/Layout';
 import ImageWithBlur from '@/components/ImageWithBlur';
-import Image from 'next/image';
 import {
   carouselImages as images,
   homeGalleryImages,
@@ -59,7 +58,7 @@ export default function Products() {
               className='font-dancingScript font-semibold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl sm:col-span-2 sm:pb-5 self-center'
               style={{
                 transform: `translate(${offset / 100}px, ${offset / 17}px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               You're not fat!
@@ -68,30 +67,30 @@ export default function Products() {
               className='font-dancingScript font-semibold text-4xl md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 self-center text-right sm:text-left lg:text-right pb-5'
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 17}px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               You're beautiful!
             </h3>
             <div
-              className='squareImage lg:wideImage relative max-w-2xl'
+              className='squareImage lg:wideImage lg:wideImage relative max-w-2xl'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
-              <Image
+              <ImageWithBlur
                 className='absolute select-none'
-                src={homeGalleryImages[0].src}
+                image={homeGalleryImages[0]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='squareImage lg:wideImage relative max-w-2xl'
+              className='squareImage lg:wideImage lg:wideImage relative max-w-2xl'
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
@@ -105,7 +104,7 @@ export default function Products() {
               className='squareImage relative max-w-2xl'
               style={{
                 transform: `translate(0px, ${offset / 90}px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
@@ -119,7 +118,7 @@ export default function Products() {
               className='squareImage relative max-w-2xl'
               style={{
                 transform: `translate(0px, ${offset / 150}px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
@@ -133,7 +132,7 @@ export default function Products() {
               className='squareImage relative max-w-2xl'
               style={{
                 transform: `translate(${offset / 80}px,0px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
@@ -147,7 +146,7 @@ export default function Products() {
               className='squareImage relative max-w-2xl'
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
@@ -161,7 +160,7 @@ export default function Products() {
               className='wideImage relative max-w-2xl sm:hidden lg:inline'
               style={{
                 transform: `translate(${offset / 100}px, -${offset / 100}px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
@@ -175,7 +174,7 @@ export default function Products() {
               className='text-sm sm:text-base self-center text-right mt-5'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
-                transition: `transform 0.5s`,
+                transition: `transform 0.3s`,
               }}
             >
               Based in Hanoi
