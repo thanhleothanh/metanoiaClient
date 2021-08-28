@@ -11,9 +11,9 @@ const ImageWithBlur = ({ className, image, objectFit }) => {
       />
       <Image
         alt='metanoia-brand'
-        className={className}
+        className='absolute select-none'
         src={image.src}
-        objectFit={objectFit}
+        objectFit='cover'
         layout='fill'
       />
     </>

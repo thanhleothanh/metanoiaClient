@@ -79,9 +79,11 @@ export default function Products() {
                 transition: `transform 0.5s`,
               }}
             >
-              <img
+              <Image
                 className='absolute select-none'
                 src={homeGalleryImages[0].src}
+                layout='fill'
+                objectFit='cover'
               />
             </div>
             <div
