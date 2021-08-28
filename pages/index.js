@@ -9,6 +9,8 @@ import {
 
 export default function Products() {
   const [image, setImage] = useState(images[3]);
+  const [offset, setOffset] = useState(0);
+
   useEffect(() => {
     let index = 0;
     function slide() {
@@ -18,17 +20,24 @@ export default function Products() {
     return () => clearInterval(internalId);
   }, []);
 
+  useEffect(() => {
+    //scroll event, for moving objects in the homepage
+    window.onscroll = () => {
+      setOffset(window.pageYOffset);
+    };
+  }, []);
+
   return (
     <Layout
+      offsetY={offset}
       title='Metanoia'
-      description='METANOIA - Thời trang dành cho plus-sized và curvy'
+      description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
-      <div className='h-auto min-h-screen w-full mt-14 mb-6'>
+      <div className='h-auto min-h-screen w-full mb-6'>
         <div className='relative flex justify-center items-center h-screen'>
           {image && (
             <ImageWithBlur
               className='absolute select-none'
-              alt='metanoia'
               image={image}
               layout='fill'
               objectFit='cover'
@@ -37,73 +46,125 @@ export default function Products() {
           <div className='z-10 absolute flex items-center justify-center w-full h-full'>
             <Link href='/collections/sun-lust'>
               <a className='bg-transparent border-4 border-white text-white text-4xl font-medium p-4'>
-                <h2 className='font-dancingScript tex'>Sun Lust</h2>
+                <h2 className='font-dancingScript'>Sun Lust</h2>
               </a>
             </Link>
           </div>
         </div>
-        <div className='flex justify-center items-center font-dancingScript text-6xl sm:text-7xl mg:text-8xl font-semibold w-full text-center h-36 bg-metanoiaYellow'>
-          You're not fat!
-        </div>
+
         <div className='mx-5 xs:mx-10 lg:mx-24 mt-10'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6'>
-            <h3 className='font-dancingScript font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl sm:self-center sm:col-span-2 sm:pb-5'>
+            <h3
+              className='font-dancingScript font-semibold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl sm:col-span-2 sm:pb-5 self-center'
+              style={{
+                transform: `translate(${offset / 100}px, ${offset / 17}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
+              You're not fat!
+            </h3>
+            <h3
+              className='font-dancingScript font-semibold text-4xl md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 self-center text-right sm:text-left lg:text-right pb-5'
+              style={{
+                transform: `translate(-${offset / 100}px, ${offset / 17}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               You're beautiful!
             </h3>
-            <h4 className='text-sm sm:text-base sm:col-start-2 sm:row-start-2 lg:col-start-1 text-right lg:text-left self-center'>
-              from Metanoia with <i className='fas fa-heart' />
-            </h4>
-            <div className='squareImage relative max-w-2xl'>
+            <div
+              className='squareImage relative max-w-2xl'
+              style={{
+                transform: `translate(-${offset / 80}px, 0px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[0]}
                 objectFit='cover'
               />
             </div>
-            <div className='squareImage relative max-w-2xl'>
+            <div
+              className='squareImage relative max-w-2xl'
+              style={{
+                transform: `translate(${offset / 80}px, 0px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[1]}
                 objectFit='cover'
               />
             </div>
-            <div className='squareImage relative max-w-2xl'>
+            <div
+              className='squareImage relative max-w-2xl'
+              style={{
+                transform: `translate(-${offset / 90}px, -${offset / 90}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[2]}
                 objectFit='cover'
               />
             </div>
-            <div className='squareImage relative max-w-2xl'>
+            <div
+              className='squareImage relative max-w-2xl'
+              style={{
+                transform: `translate(-${offset / 95}px, ${offset / 95}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[3]}
                 objectFit='cover'
               />
             </div>
-            <div className='squareImage relative max-w-2xl'>
-              <ImageWithBlur
-                className='absolute select-none'
-                image={homeGalleryImages[5]}
-                objectFit='cover'
-              />
-            </div>
-            <div className='squareImage relative max-w-2xl'>
+            <div
+              className='squareImage relative max-w-2xl'
+              style={{
+                transform: `translate(${offset / 80}px, ${offset / 90}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[4]}
                 objectFit='cover'
               />
             </div>
-            <div className='squareImage relative max-w-2xl sm:hidden lg:inline'>
+            <div
+              className='squareImage relative max-w-2xl'
+              style={{
+                transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
+              <ImageWithBlur
+                className='absolute select-none'
+                image={homeGalleryImages[5]}
+                objectFit='cover'
+              />
+            </div>
+            <div
+              className='squareImage relative max-w-2xl sm:hidden lg:inline'
+              style={{
+                transform: `translate(${offset / 100}px, ${offset / 100}px)`,
+                transition: `transform 0.5s`,
+              }}
+            >
               <ImageWithBlur
                 className='absolute select-none'
                 image={homeGalleryImages[6]}
                 objectFit='cover'
               />
             </div>
-            <p className='text-sm sm:text-base self-center text-right lg:col-span-2'>
-              Hanoi, 2021
+            <p className='text-sm sm:text-base self-center text-right mt-5'>
+              Based in Hanoi
             </p>
           </div>
         </div>

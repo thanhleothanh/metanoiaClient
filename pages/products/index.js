@@ -2,7 +2,7 @@ import axios from 'axios';
 import Layout from '@/components/Layout';
 import ProductItems from '@/components/products/ProductItems';
 import { API_URL } from '@/utils/config';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function ProductsPage({ productsString }) {
   const [category, setCategory] = useState(null);
@@ -10,7 +10,7 @@ export default function ProductsPage({ productsString }) {
 
   return (
     <Layout
-      title={`Metanoia | Products`}
+      title={`Metanoia | Các sản phẩm`}
       description={`Các sản phẩm áo, váy, đầm... METANOIA - Thời trang dành cho plus-sized và curvy`}
     >
       <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>

@@ -10,6 +10,7 @@ const ImageWithBlur = ({ className, image, objectFit }) => {
         className='absolute w-full h-full object-cover'
       />
       <Image
+        alt='metanoia-brand'
         className={className}
         src={image.src}
         objectFit={objectFit}

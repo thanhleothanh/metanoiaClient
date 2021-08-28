@@ -2,12 +2,20 @@ import DropdownMenu from '@/components/DropdownMenu';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function Navigation() {
+export default function Navigation({ offsetY }) {
   const router = useRouter();
   const path = router.pathname.split('/');
 
   return (
-    <nav className='flex justify-between fixed inset-0 z-20 w-full fixedHeader bg-white'>
+    <nav
+      className='flex justify-between fixed inset-0 z-20 w-full fixedHeader'
+      style={{
+        backgroundColor: `${
+          offsetY !== undefined && offsetY === 0 ? 'transparent' : 'white'
+        }`,
+        transition: 'background-color 0.5s',
+      }}
+    >
       <Link href='/'>
         <a className='text-xl md:text-2xl font-semibold py-4 md:py-3 px-4'>
           Metanoia

@@ -30,15 +30,15 @@ export default function ProductItems({ productsString, chosenCategory }) {
                   objectFit='cover'
                 />
               </div>
-              <h2 className='font-normal sm:text-base mt-1'>{product.name}</h2>
-              <h5 className='font-light text-sm sm:text-base inline'>
+              <h2 className='font-normal text-base mt-1'>{product.name}</h2>
+              <h5 className='font-light text-sm xs:text-base inline'>
                 {product.discountPrice && product.discountPrice > 0
                   ? toVND(product.discountPrice)
                   : toVND(product.price)}{' '}
                 ₫{' '}
               </h5>
-              {product.discountPrice && product.discountPrice > 0 && (
-                <h5 className='font-light text-sm sm:text-base inline line-through text-red-600'>
+              {product.discountPrice !== 0 && product.discountPrice > 0 && (
+                <h5 className='font-light text-sm xs:text-base inline line-through text-red-600'>
                   {toVND(product.price)} ₫
                 </h5>
               )}

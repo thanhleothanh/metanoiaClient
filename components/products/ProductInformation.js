@@ -10,16 +10,16 @@ export default function ProductInformation({
   const [sizeChosen, setSizeChosen] = useState(null);
   return (
     <>
-      <h2 className='text-left text-lg font-medium'>{name}</h2>
+      <h1 className='text-left text-lg font-medium'>{name}</h1>
       <div className='text-left mt-1'>
-        <h5 className='font-normal lg:text-lg inline'>
+        <h5 className='font-light lg:text-lg inline'>
           {discountPrice && discountPrice > 0
             ? toVND(discountPrice)
             : toVND(price)}
           ₫{' '}
         </h5>
-        {discountPrice && discountPrice > 0 && (
-          <h5 className='font-normal lg:text-lg inline line-through text-red-600'>
+        {discountPrice !== 0 && (
+          <h5 className='font-light lg:text-lg inline line-through text-red-600'>
             {toVND(price)} ₫
           </h5>
         )}
@@ -60,7 +60,7 @@ export default function ProductInformation({
       >
         Đặt hàng qua <i className='fab fa-facebook-square' />
       </a>
-      <h3 className='text-left mt-3'>{description}</h3>
+      <h2 className='text-left mt-3'>{description}</h2>
     </>
   );
 }

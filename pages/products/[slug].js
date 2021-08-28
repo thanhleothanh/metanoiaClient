@@ -7,13 +7,14 @@ import ProductInformation from '@/components/products/ProductInformation';
 export default function ProductPage({ product }) {
   const { name, description, price, discountPrice, images, inStock } =
     JSON.parse(product);
+
   return (
     <Layout
       title={`Metanoia | ${name}`}
-      description={`METANOIA - Thời trang dành cho plus-sized và curvy, ${name}`}
+      description={`Sản phẩm ${name} của METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa`}
     >
       <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>
-        <div className='flex flex-col md:flex-row justify-center items-center'>
+        <div className='flex flex-col md:flex-row justify-center'>
           <div className='flex flex-col w-full md:w-1/2 space-y-4'>
             <ImagesList imagesString={JSON.stringify(images)} />
           </div>
@@ -32,7 +33,18 @@ export default function ProductPage({ product }) {
   );
 }
 
-export async function getServerSideProps({ query: { slug } }) {
+export async function getStaticPaths() {
+  const { data } = await axios.get(`${API_URL}/api/products`);
+  const paths = data.map((product) => ({
+    params: { slug: product.slug },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+export async function getStaticProps({ params: { slug } }) {
   const { data } = await axios.get(`${API_URL}/api/products/${slug}`);
   const product = JSON.stringify(data);
   return {

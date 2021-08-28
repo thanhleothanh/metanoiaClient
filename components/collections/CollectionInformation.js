@@ -1,28 +1,10 @@
-export default function CollectionInformation({
-  name,
-  description,
-  season,
-  designers,
-  photographers,
-  models,
-}) {
+export default function CollectionInformation({ name, description }) {
   return (
     <>
-      <h2 className='font-dancingScript text-4xl lg:text-5xl font-medium text-left'>
+      <h1 className='font-dancingScript text-4xl lg:text-5xl font-medium text-left'>
         {name}
-      </h2>
-      <h3 className='text-left md:w-3/4 pt-3'>{description}</h3>
-
-      <h4 className='text-left md:w-3/4 pt-3'>
-        Mùa: {season || new Date().getFullYear()}
-      </h4>
-      <h4 className='text-left md:w-3/4 pt-1'>
-        Thiết kế: {designers.join(', ')}
-      </h4>
-      <h4 className='text-left md:w-3/4 pt-1'>
-        Chụp ảnh: {photographers.join(', ')}
-      </h4>
-      <h4 className='text-left md:w-3/4 pt-1'>Mẫu: {models.join(', ')}</h4>
+      </h1>
+      <h2 className='text-left lg:w-3/4 pt-3'>{description}</h2>
     </>
   );
 }
