@@ -1,5 +1,5 @@
 import toVND from '@/utils/toVND';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 export default function ProductInformation({
   name,
   description,
