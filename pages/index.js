@@ -34,7 +34,7 @@ export default function Products() {
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
       <div className='h-auto min-h-screen w-full mb-6'>
-        <div className='flex justify-center items-center hScreenWithInsetBottom'>
+        <div className='flex justify-center items-center hScreenWithInset'>
           {image && (
             <ImageWithBlur image={image} layout='fill' objectFit='cover' />
           )}

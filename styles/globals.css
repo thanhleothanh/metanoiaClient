@@ -10,8 +10,8 @@
 .fixedHeader {
   height: calc(3.5rem + env(safe-area-inset-top));
 }
-.hScreenWithInsetBottom {
-  height: calc(100vh + env(safe-area-inset-bottom));
+.hScreenWithInset {
+  height: calc(100vh + env(safe-area-inset-bottom) + env(safe-area-inset-top));
 }
 @layer utilities {
   .longImage {
