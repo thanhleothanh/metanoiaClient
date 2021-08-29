@@ -33,12 +33,12 @@ export default function Products() {
       title='Metanoia'
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
-      <div className='h-auto min-h-screen w-full mb-6'>
-        <div className='flex justify-center items-center hScreenWithInset'>
+      <div className='min-h-screen w-full mb-6'>
+        <div className='relative flex justify-center items-center h-screen'>
           {image && (
             <ImageWithBlur image={image} layout='fill' objectFit='cover' />
           )}
-          <div className='z-10 absolute flex items-center justify-center w-full h-full'>
+          <div className='absolute z-10 flex items-center justify-center w-full h-full'>
             <Link href='/collections/sun-lust'>
               <a className='bg-transparent border-4 border-white text-white text-4xl font-medium p-4'>
                 <h2 className='font-dancingScript'>Sun Lust</h2>
@@ -47,7 +47,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div className='mx-7 xs:mx-10 lg:mx-24'>
+        <div className='mx-7 xs:mx-10 lg:mx-24 pt-5'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 place-items-center'>
             <h3
               className='font-dancingScript font-semibold text-4xl xs:text-5xl md:text-6xl lg:text-7xl sm:col-span-2 place-self-start lg:place-self-center'
@@ -68,7 +68,7 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='pb-2/3 lg:pb-3/2 w-full sm:mt-3'
+              className='pb-2/3 lg:pb-3/2 relative w-full sm:mt-3'
               style={{
                 transform: `translate(-${offset / 100}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -81,7 +81,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-2/3 w-full'
+              className='pb-2/3 relative w-full'
               style={{
                 transform: `translate(${offset / 100}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -94,7 +94,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-1/1 w-full'
+              className='pb-1/1 relative w-full'
               style={{
                 transform: `translate(0px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -108,7 +108,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-1/1 w-full'
+              className='pb-1/1 relative w-full'
               style={{
                 transform: `translate(${offset / 130}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -121,7 +121,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-3/2 w-full'
+              className='pb-3/2 relative w-full'
               style={{
                 transform: `translate(${offset / 100}px,0px)`,
                 transition: `transform 0.3s`,
@@ -134,7 +134,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-1/1 w-full'
+              className='pb-1/1 relative w-full'
               style={{
                 transform: `translate(-${offset / 150}px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -147,7 +147,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-2/3 w-full sm:hidden lg:inline'
+              className='pb-2/3 relative w-full sm:hidden lg:inline'
               style={{
                 transform: `translate(${offset / 150}px, -${offset / 100}px)`,
                 transition: `transform 0.3s`,
