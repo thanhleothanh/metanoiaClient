@@ -47,10 +47,10 @@ export default function Products() {
           </div>
         </div>
 
-        <div className='mx-5 xs:mx-10 lg:mx-24 mt-5'>
+        <div className='mx-5 xs:mx-10 lg:mx-24 md:mt-5'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 place-items-center'>
             <h3
-              className='font-dancingScript font-semibold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl sm:col-span-2 sm:pb-5 place-self-start lg:place-self-center'
+              className='font-dancingScript font-semibold text-4xl xs:text-5xl md:text-6xl lg:text-7xl sm:col-span-2 place-self-start lg:place-self-center'
               style={{
                 transform: `translate(${offset / 100}px, ${offset / 17}px)`,
                 transition: `transform 0.3s`,
@@ -59,7 +59,7 @@ export default function Products() {
               You're not fat!
             </h3>
             <h3
-              className='font-dancingScript font-semibold text-4xl md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 self-center pb-5 place-self-end place-items-start lg:place-self-center'
+              className='font-dancingScript font-semibold text-4xl md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 self-center pb-10 place-items-start lg:place-self-center'
               style={{
                 transform: `translate(-${offset / 50}px, ${offset / 17}px)`,
                 transition: `transform 0.3s`,
@@ -68,7 +68,7 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='pb-3/2 w-full '
+              className='pb-2/3 lg:pb-3/2 w-full sm:mt-5'
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -81,7 +81,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-2/3 w-full '
+              className='pb-2/3 w-full'
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -94,7 +94,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-1/1 w-full '
+              className='pb-1/1 w-full'
               style={{
                 transform: `translate(0px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -108,7 +108,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-1/1 w-full '
+              className='pb-1/1 w-full'
               style={{
                 transform: `translate(${offset / 130}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -121,7 +121,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-3/2 w-full '
+              className='pb-3/2 w-full'
               style={{
                 transform: `translate(${offset / 80}px,0px)`,
                 transition: `transform 0.3s`,
@@ -134,7 +134,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='pb-1/1 w-full '
+              className='pb-1/1 w-full'
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
