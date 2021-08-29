@@ -6,7 +6,6 @@ import {
   carouselImages as images,
   homeGalleryImages,
 } from '@/utils/staticData.js';
-import '../styles/globals.css';
 
 export default function Products() {
   const [image, setImage] = useState(images[3]);
