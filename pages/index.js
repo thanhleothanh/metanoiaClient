@@ -34,14 +34,9 @@ export default function Products() {
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
       <div className='h-auto min-h-screen w-full mb-6'>
-        <div className='relative flex justify-center items-center h-screen'>
+        <div className='flex justify-center items-center h-screen'>
           {image && (
-            <ImageWithBlur
-              className='absolute select-none'
-              image={image}
-              layout='fill'
-              objectFit='cover'
-            />
+            <ImageWithBlur image={image} layout='fill' objectFit='cover' />
           )}
           <div className='z-10 absolute flex items-center justify-center w-full h-full'>
             <Link href='/collections/sun-lust'>
@@ -73,98 +68,91 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='squareImage sm:longImage relative max-w-2xl w-60 '
+              className='longImage max-w-2xl w-60 '
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
-                image={homeGalleryImages[7]}
+                image={homeGalleryImages[0]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl w-60 '
+              className='squareImage max-w-2xl w-60 '
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
                 image={homeGalleryImages[1]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl w-60 '
+              className='squareImage max-w-2xl w-60 '
               style={{
                 transform: `translate(0px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
                 image={homeGalleryImages[2]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl w-60 '
+              className='squareImage max-w-2xl w-60 '
               style={{
                 transform: `translate(${offset / 130}px, 0px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
                 image={homeGalleryImages[3]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl w-60 '
+              className='squareImage max-w-2xl w-60 '
               style={{
                 transform: `translate(${offset / 80}px,0px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
                 image={homeGalleryImages[4]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='squareImage relative max-w-2xl w-60 '
+              className='squareImage max-w-2xl w-60 '
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
                 image={homeGalleryImages[5]}
                 layout='fill'
                 objectFit='cover'
               />
             </div>
             <div
-              className='wideImage relative max-w-2xl w-60  sm:hidden lg:inline'
+              className='wideImage max-w-2xl w-60 sm:hidden lg:inline'
               style={{
                 transform: `translate(${offset / 100}px, -${offset / 100}px)`,
                 transition: `transform 0.3s`,
               }}
             >
               <ImageWithBlur
-                className='absolute select-none'
                 image={homeGalleryImages[6]}
                 layout='fill'
                 objectFit='cover'

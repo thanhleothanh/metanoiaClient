@@ -15,7 +15,7 @@ export default function ProductPage({ product }) {
     >
       <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>
         <div className='flex flex-col md:flex-row justify-center'>
-          <div className='flex flex-col w-full md:w-1/2 space-y-4'>
+          <div className='flex flex-col w-full md:w-1/2'>
             <ImagesList imagesString={JSON.stringify(images)} />
           </div>
           <div className='flex flex-col self-start w-full md:w-1/2 text-right md:sticky md:top-14 md:pl-10 mt-5 md:mt-0'>

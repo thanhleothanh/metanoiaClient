@@ -17,14 +17,14 @@ export default function CollectionPage({ collection }) {
         </div>
         <div className='flex flex-col lg:flex-row justify-center items-center mt-5'>
           <div className='flex flex-col w-full sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0'>
-            <div className='w-full sm:w-1/2 sm:mt-20 space-y-4'>
+            <div className='w-full sm:w-1/2 sm:mt-20'>
               <ImagesList
                 imagesString={JSON.stringify(images)}
                 start={0}
                 stop={images.length / 2 - 1}
               />
             </div>
-            <div className='w-full sm:w-1/2 space-y-4'>
+            <div className='w-full sm:w-1/2'>
               <ImagesList
                 imagesString={JSON.stringify(images)}
                 start={images.length / 2}
