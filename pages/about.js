@@ -9,7 +9,7 @@ export default function Products() {
     >
       <div className='min-h-screen w-full px-5 xs:px-10 mt-20 mb-6'>
         <div className='flex flex-col justify-center items-center max-w-lg mx-auto'>
-          <div className='h-96 w-full'>
+          <div className='relative pb-1/1 w-full'>
             <ImageWithBlur
               image={{
                 src: '/metanoia.jpg',

@@ -4,7 +4,7 @@ import { defaultHash } from 'utils/staticData';
 
 const ImageWithBlur = ({ image, objectFit }) => {
   return (
-    <div className='relative w-full h-full'>
+    <div className='w-full h-full'>
       <BlurhashCanvas
         hash={image.blurhash ?? defaultHash}
         className='absolute w-full h-full object-cover'

@@ -47,10 +47,10 @@ export default function Products() {
           </div>
         </div>
 
-        <div className='mx-5 xs:mx-10 lg:mx-24 mt-10'>
+        <div className='mx-5 xs:mx-10 lg:mx-24 mt-5'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 place-items-center'>
             <h3
-              className='font-dancingScript font-semibold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl sm:col-span-2 sm:pb-5 place-self-start'
+              className='font-dancingScript font-semibold text-4xl xs:text-5xl sm:text-6xl lg:text-7xl sm:col-span-2 sm:pb-5 place-self-start lg:place-self-center'
               style={{
                 transform: `translate(${offset / 100}px, ${offset / 17}px)`,
                 transition: `transform 0.3s`,
@@ -59,7 +59,7 @@ export default function Products() {
               You're not fat!
             </h3>
             <h3
-              className='font-dancingScript font-semibold text-4xl md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 self-center pb-5 place-self-end lg:place-self-center'
+              className='font-dancingScript font-semibold text-4xl md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 self-center pb-5 place-self-end place-items-start lg:place-self-center'
               style={{
                 transform: `translate(-${offset / 50}px, ${offset / 17}px)`,
                 transition: `transform 0.3s`,
@@ -68,7 +68,7 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='longImage w-60 '
+              className='pb-3/2 w-full '
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -81,7 +81,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage w-60 '
+              className='pb-2/3 w-full '
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -94,10 +94,11 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage w-60 '
+              className='pb-1/1 w-full '
               style={{
                 transform: `translate(0px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
+                aspectRatio: '1/1',
               }}
             >
               <ImageWithBlur
@@ -107,7 +108,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage w-60 '
+              className='pb-1/1 w-full '
               style={{
                 transform: `translate(${offset / 130}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -120,7 +121,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage w-60 '
+              className='pb-3/2 w-full '
               style={{
                 transform: `translate(${offset / 80}px,0px)`,
                 transition: `transform 0.3s`,
@@ -133,7 +134,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage w-60 '
+              className='pb-1/1 w-full '
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -146,7 +147,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='wideImage w-60 sm:hidden lg:inline'
+              className='pb-2/3 w-full sm:hidden lg:inline'
               style={{
                 transform: `translate(${offset / 100}px, -${offset / 100}px)`,
                 transition: `transform 0.3s`,

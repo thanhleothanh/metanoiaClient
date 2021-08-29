@@ -15,6 +15,11 @@ module.exports = {
       fontFamily: {
         dancingScript: "'Dancing Script', serif",
       },
+      spacing: {
+        '2/3': '66%',
+        '3/2': '120%',
+        '1/1': '100%',
+      },
     },
     screens: {
       xs: '470px',

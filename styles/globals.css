@@ -7,17 +7,17 @@
     @apply bg-white;
   }
 }
-
 .fixedHeader {
   height: calc(3.5rem + env(safe-area-inset-top));
 }
-
-.longImage {
-  aspect-ratio: 1 / 1.2;
-}
-.squareImage {
-  aspect-ratio: 1 / 1;
-}
-.wideImage {
-  aspect-ratio: 1.5 / 1;
+@layer utilities {
+  .longImage {
+    aspect-ratio: 1 / 1.2;
+  }
+  .squareImage {
+    aspect-ratio: 1 / 1;
+  }
+  .wideImage {
+    aspect-ratio: 1.5 / 1;
+  }
 }
