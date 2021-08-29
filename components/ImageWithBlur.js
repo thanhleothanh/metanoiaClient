@@ -14,7 +14,7 @@ const ImageWithBlur = ({ className, image, objectFit }) => {
         src={image.src}
         objectFit={objectFit}
         layout='fill'
-        unoptimized='true'
+        unoptimized={true}
       />
     </>
   );
