@@ -46,6 +46,10 @@ export const homeGalleryImages = [
     src: '/homeGallery/7.jpg',
     blurhash: 'L7HxH4NfIU9G00~V9bt59b~U%1t7',
   },
+  {
+    src: '/homeGallery/trangbui55170.jpg',
+    blurhash: 'L7HxH4NfIU9G00~V9bt59b~U%1t7',
+  },
 ];
 
 export const defaultHash = 'LDK9=GJ4~CIV}[E2butQD*$+NHNa';
