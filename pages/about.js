@@ -7,9 +7,9 @@ export default function Products() {
       title='Metanoia | Về chúng mình'
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
-      <div className='min-h-screen w-full px-5 xs:px-10 mt-20 mb-6'>
-        <div className='flex flex-col justify-center items-center max-w-lg mx-auto'>
-          <div className='relative pb-1/1 w-full'>
+      <div className='w-full min-h-screen px-5 mt-20 mb-6 xs:px-10'>
+        <div className='flex flex-col items-center justify-center max-w-lg mx-auto'>
+          <div className='relative w-full pb-1/1'>
             <ImageWithBlur
               image={{
                 src: '/metanoia.jpg',
@@ -19,8 +19,8 @@ export default function Products() {
               objectFit='cover'
             />
           </div>
-          <div className='text-left w-full space-y-4'>
-            <h2 className='text-3xl lg:text-4xl font-dancingScript mt-5'>
+          <div className='w-full space-y-4 text-left'>
+            <h2 className='mt-5 text-3xl lg:text-4xl font-dancingScript'>
               Our Story
             </h2>
             <p>

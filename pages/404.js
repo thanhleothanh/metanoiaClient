@@ -7,13 +7,13 @@ export default function Products() {
       title='Metanoia'
       description='METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa'
     >
-      <div className='h-auto min-h-screen w-full px-5 xs:px-10'>
-        <div className='h-screen flex flex-col justify-center items-center max-w-lg mx-auto'>
-          <div className='text-center text-2xl sm:text-4xl font-light'>
+      <div className='w-full h-auto min-h-screen px-5 xs:px-10'>
+        <div className='flex flex-col items-center justify-center h-screen max-w-lg mx-auto'>
+          <div className='text-2xl font-light text-center sm:text-4xl'>
             Không có gì ở đây cả!
           </div>
           <Link href='/'>
-            <a className='flex justify-center items-center w-full mt-5 sm:mt-10 p-3 border-2 border-gray-300 hover:border-black'>
+            <a className='flex items-center justify-center w-full p-3 mt-5 border-2 border-gray-300 sm:mt-10 hover:border-black'>
               Trở về trang chủ Metanoia
             </a>
           </Link>

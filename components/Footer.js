@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='flex justify-between items-center p-3 bg-metanoiaBeige'>
+    <footer className='flex items-center justify-between p-3 bg-metanoiaBeige'>
       <div className='space-x-2'>
         <a
           href='https://www.facebook.com/metanoia.hanoi/'

@@ -10,16 +10,16 @@ export default function ProductInformation({
   const [sizeChosen, setSizeChosen] = useState(null);
   return (
     <>
-      <h1 className='text-left text-lg font-medium'>{name}</h1>
-      <div className='text-left mt-1'>
-        <h5 className='font-light lg:text-lg inline'>
+      <h1 className='text-lg font-medium text-left'>{name}</h1>
+      <div className='mt-1 text-left'>
+        <h5 className='inline font-light lg:text-lg'>
           {discountPrice && discountPrice > 0
             ? toVND(discountPrice)
             : toVND(price)}
           ₫{' '}
         </h5>
         {discountPrice !== 0 && (
-          <h5 className='font-light lg:text-lg inline line-through text-red-600'>
+          <h5 className='inline font-light text-red-600 line-through lg:text-lg'>
             {toVND(price)} ₫
           </h5>
         )}
@@ -53,14 +53,14 @@ export default function ProductInformation({
         })}
       </div> */}
       <a
-        className='border-2 p-1 border-gray-300 hover:border-black text-center mt-3'
+        className='p-1 mt-3 text-center border-2 border-gray-300 hover:border-black'
         href='https://m.me/metanoia.hanoi'
         rel='noopener noreferrer'
         target='_blank'
       >
         Đặt hàng qua <i className='fab fa-facebook-square' />
       </a>
-      <h2 className='text-left mt-3'>{description}</h2>
+      <h2 className='mt-3 text-left'>{description}</h2>
     </>
   );
 }

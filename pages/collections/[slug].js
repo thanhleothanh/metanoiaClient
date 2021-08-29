@@ -11,12 +11,12 @@ export default function CollectionPage({ collection }) {
       title={`Metanoia | Bộ sưu tập ${name}`}
       description={`Bộ sưu tập ${name} của METANOIA - Thời trang dành cho plus-sized và curvy, váy, đầm, áo và hơn nữa`}
     >
-      <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>
+      <div className='min-h-screen mx-5 mt-20 mb-6 xs:mx-10 lg:mx-24'>
         <div>
           <CollectionInformation name={name} description={description} />
         </div>
-        <div className='flex flex-col lg:flex-row justify-center items-center mt-5'>
-          <div className='flex flex-col w-full sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0'>
+        <div className='flex flex-col items-center justify-center mt-5 lg:flex-row'>
+          <div className='flex flex-col w-full space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0'>
             <div className='w-full sm:w-1/2 sm:mt-20'>
               <ImagesList
                 imagesString={JSON.stringify(images)}
@@ -32,8 +32,8 @@ export default function CollectionPage({ collection }) {
               />
             </div>
           </div>
-          <div className='flex flex-col text-right self-start w-full lg:w-56 lg:sticky lg:top-14 lg:ml-5 mt-5 lg:mt-0'>
-            <h4 className='lg:text-lg font-semibold'>Bộ sưu tập khác</h4>
+          <div className='flex flex-col self-start w-full mt-5 text-right lg:w-56 lg:sticky lg:top-14 lg:ml-5 lg:mt-0'>
+            <h4 className='font-semibold lg:text-lg'>Bộ sưu tập khác</h4>
             <h4 className='text-sm lg:text-base'>Coming soon...</h4>
           </div>
         </div>

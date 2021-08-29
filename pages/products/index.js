@@ -13,9 +13,9 @@ export default function ProductsPage({ productsString }) {
       title={`Metanoia | Các sản phẩm`}
       description={`Các sản phẩm áo, váy, đầm... METANOIA - Thời trang dành cho plus-sized và curvy`}
     >
-      <div className='min-h-screen mt-20 mx-5 xs:mx-10 lg:mx-24 mb-6'>
-        <div className='flex flex-col-reverse md:flex-row justify-center items-center w-full'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6'>
+      <div className='min-h-screen mx-5 mt-20 mb-6 xs:mx-10 lg:mx-24'>
+        <div className='flex flex-col-reverse items-center justify-center w-full md:flex-row'>
+          <div className='grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
             <ProductItems
               productsString={productsString}
               chosenCategory={category}
