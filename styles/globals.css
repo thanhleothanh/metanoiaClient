@@ -11,7 +11,7 @@
   height: calc(3.5rem + env(safe-area-inset-top));
 }
 .hScreenWithInsetBottom {
-  height: calc(100% + env(safe-area-inset-bottom));
+  height: calc(100vh + env(safe-area-inset-bottom));
 }
 @layer utilities {
   .longImage {
