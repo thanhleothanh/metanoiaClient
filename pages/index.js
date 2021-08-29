@@ -6,6 +6,7 @@ import {
   carouselImages as images,
   homeGalleryImages,
 } from '@/utils/staticData.js';
+import '../styles/globals.css';
 
 export default function Products() {
   const [image, setImage] = useState(images[3]);
@@ -68,7 +69,7 @@ export default function Products() {
               You're beautiful!
             </h3>
             <div
-              className='longImage max-w-2xl w-60 '
+              className='longImage w-60 '
               style={{
                 transform: `translate(-${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -81,7 +82,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage max-w-2xl w-60 '
+              className='squareImage w-60 '
               style={{
                 transform: `translate(${offset / 80}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -94,7 +95,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage max-w-2xl w-60 '
+              className='squareImage w-60 '
               style={{
                 transform: `translate(0px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -107,7 +108,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage max-w-2xl w-60 '
+              className='squareImage w-60 '
               style={{
                 transform: `translate(${offset / 130}px, 0px)`,
                 transition: `transform 0.3s`,
@@ -120,7 +121,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage max-w-2xl w-60 '
+              className='squareImage w-60 '
               style={{
                 transform: `translate(${offset / 80}px,0px)`,
                 transition: `transform 0.3s`,
@@ -133,7 +134,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='squareImage max-w-2xl w-60 '
+              className='squareImage w-60 '
               style={{
                 transform: `translate(-${offset / 100}px, ${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -146,7 +147,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='wideImage max-w-2xl w-60 sm:hidden lg:inline'
+              className='wideImage w-60 sm:hidden lg:inline'
               style={{
                 transform: `translate(${offset / 100}px, -${offset / 100}px)`,
                 transition: `transform 0.3s`,
