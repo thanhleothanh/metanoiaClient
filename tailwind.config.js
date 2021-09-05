@@ -20,10 +20,19 @@ module.exports = {
         '3/2': '120%',
         '1/1': '100%',
       },
+      maxHeight: {
+        '8/10': '80%',
+        '9/10': '90%',
+      },
+      minWidth: {
+        '1/4': '25%',
+      },
     },
     screens: {
       xs: '470px',
       ...defaultTheme.screens,
+      '2xl': '1700px',
+      '3xl': '2000px',
     },
   },
   variants: {

@@ -40,7 +40,7 @@ export default function Products() {
           )}
           <div className='absolute z-10 flex items-center justify-center w-full h-full'>
             <Link href='/collections/sun-lust'>
-              <a className='p-4 text-4xl font-medium text-white bg-transparent border-4 border-white'>
+              <a className='text-4xl font-semibold text-white sm:text-5xl md:text-6xl 3xl:text-7xl'>
                 <h2 className='font-dancingScript'>Sun Lust</h2>
               </a>
             </Link>
@@ -50,22 +50,23 @@ export default function Products() {
         <div className='pt-5 mx-7 xs:mx-10 lg:mx-24'>
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 place-items-center'>
             <h3
-              className='text-4xl font-semibold font-dancingScript xs:text-5xl md:text-6xl lg:text-7xl sm:col-span-2 place-self-start lg:place-self-center'
+              className='self-center text-4xl font-semibold sm:text-5xl md:text-6xl font-dancingScript sm:col-span-2 place-self-start 2xl:text-7xl 3xl:text-8xl'
               style={{
                 transform: `translate(${offset / 100}px, ${offset / 30}px)`,
                 transition: `transform 0.3s`,
               }}
             >
-              You're not fat!
+              It's not about
+              <br /> what size you wear!
             </h3>
             <h3
-              className='self-center pb-10 text-4xl font-semibold font-dancingScript md:text-5xl lg:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 lg:col-span-2 place-items-start lg:place-self-center'
+              className='self-center pb-10 text-4xl font-semibold text-right sm:text-5xl font-dancingScript md:text-6xl sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-2 sm:col-span-2 place-self-end 2xl:text-7xl 3xl:text-8xl'
               style={{
-                transform: `translate(-${offset / 50}px, ${offset / 30}px)`,
+                transform: `translate(-${offset / 50}px, ${offset / 50}px)`,
                 transition: `transform 0.3s`,
               }}
             >
-              You're beautiful!
+              It's about how <br /> you wear your size!
             </h3>
             <div
               className='relative w-full pb-2/3 lg:pb-3/2 sm:mt-3'
@@ -147,7 +148,7 @@ export default function Products() {
               />
             </div>
             <div
-              className='relative w-full pb-2/3 sm:hidden lg:inline'
+              className='relative w-full pb-2/3 sm:hidden md:inline md:col-span-2'
               style={{
                 transform: `translate(${offset / 150}px, -${offset / 100}px)`,
                 transition: `transform 0.3s`,
@@ -159,15 +160,6 @@ export default function Products() {
                 objectFit='cover'
               />
             </div>
-            <p
-              className='self-center mt-5 text-sm text-right sm:text-base'
-              style={{
-                transform: `translate(${offset / 80}px, 0px)`,
-                transition: `transform 0.3s`,
-              }}
-            >
-              Based in Hanoi
-            </p>
           </div>
         </div>
       </div>

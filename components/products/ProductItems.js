@@ -17,7 +17,7 @@ export default function ProductItems({ productsString, chosenCategory }) {
         return (
           <Link key={product.slug} href={`/products/${product.slug}`}>
             <a>
-              <div className='relative w-full max-w-2xl pb-3/2'>
+              <div className='relative w-full pb-3/2'>
                 <ImageWithBlur
                   className='absolute select-none'
                   image={product.images[0]}
@@ -31,15 +31,17 @@ export default function ProductItems({ productsString, chosenCategory }) {
                   objectFit='cover'
                 />
               </div>
-              <h2 className='mt-1 text-base font-normal'>{product.name}</h2>
-              <h5 className='inline text-sm font-light xs:text-base'>
+              <h2 className='mt-1 text-base font-normal 2xl:text-xl 3xl:text-2xl'>
+                {product.name}
+              </h2>
+              <h5 className='inline text-sm font-light xs:text-base 2xl:text-xl 3xl:text-2xl'>
                 {product.discountPrice && product.discountPrice > 0
                   ? toVND(product.discountPrice)
                   : toVND(product.price)}{' '}
                 ₫{' '}
               </h5>
               {product.discountPrice !== 0 && product.discountPrice > 0 && (
-                <h5 className='inline text-sm font-light text-red-600 line-through xs:text-base'>
+                <h5 className='inline text-sm font-light text-red-600 line-through xs:text-base 2xl:text-xl 3xl:text-2xl'>
                   {toVND(product.price)} ₫
                 </h5>
               )}

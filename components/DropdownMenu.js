@@ -38,18 +38,23 @@ const DropdownMenu = () => {
       <div
         style={{
           display: `${show ? 'inline' : 'none'}`,
-          transition: 'display 0.5s',
         }}
       >
-        <div className='absolute right-0 flex flex-col w-32 mt-1 overflow-hidden font-medium text-right origin-top-right bg-white border-2'>
+        <div className='absolute right-0 flex flex-col overflow-hidden font-medium text-right origin-top-right bg-white border-2 w-36'>
           <Link href='/products'>
-            <a className='p-3 hover:text-metanoiaYellow'>Products</a>
+            <a className='p-3 text-sm hover:text-metanoiaYellow sm:text-base'>
+              Sản phẩm
+            </a>
           </Link>
           <Link href='/collections/sun-lust'>
-            <a className='p-3 hover:text-metanoiaYellow'>Collections</a>
+            <a className='p-3 text-sm hover:text-metanoiaYellow sm:text-base'>
+              Bộ sưu tập
+            </a>
           </Link>
           <Link href='/about'>
-            <a className='p-3 hover:text-metanoiaYellow'> About</a>
+            <a className='p-3 text-sm hover:text-metanoiaYellow sm:text-base'>
+              Về chúng mình
+            </a>
           </Link>
         </div>
       </div>

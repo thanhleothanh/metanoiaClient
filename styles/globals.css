@@ -1,16 +1,11 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 @layer base {
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     @apply bg-white;
   }
 }
-.fixedHeader {
-  height: calc(3.5rem + env(safe-area-inset-top));
-}
-
 @layer utilities {
   .longImage {
     aspect-ratio: 1 / 1.2;
@@ -22,3 +17,47 @@
     aspect-ratio: 1.5 / 1;
   }
 }
+@media screen and (min-width: 0px) {
+  .svgWidth {
+    width: 130px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .svgWidth {
+    width: 160px;
+  }
+  .fixedHeader {
+    height: calc(4rem + env(safe-area-inset-top));
+  }
+}
+@media screen and (min-width: 1024px) {
+  .svgWidth {
+    width: 175px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .svgWidth {
+    width: 210px;
+  }
+  .fixedHeader {
+    height: calc(5rem + env(safe-area-inset-top));
+  }
+}
+@media screen and (min-width: 2000px) {
+  .svgWidth {
+    width: 235px;
+  }
+  .fixedHeader {
+    height: calc(6rem + env(safe-area-inset-top));
+  }
+}
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+.fixedHeader {
+  height: calc(3.5rem + env(safe-area-inset-top));
+}
+.paddingInsetTop {
+  padding-top: env(safe-area-inset-top);
+}
+
+@tailwind utilities;

@@ -11,10 +11,17 @@ class MyDocument extends Document {
       <Html lang='vi'>
         <Head>
           <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+          <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
+          <meta charset='UTF-8' />
+          <meta
+            name='keywords'
+            content='Thời trang, plus-sized, curvy, áo, đầm, váy'
+          />
           <meta
             name='apple-mobile-web-app-status-bar-style'
             content='black-translucent'
           />
+          <link rel='canonical' href='https://metanoiahanoi.vercel.app' />
           <link rel='manifest' href='/site.webmanifest' />
           <link
             rel='icon'
@@ -173,13 +180,14 @@ class MyDocument extends Document {
             rel='stylesheet'
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap'
             rel='stylesheet'
           />
         </Head>
         <body>
           <Main />
           <NextScript />
+          <div id='modal-root' />
         </body>
       </Html>
     );
