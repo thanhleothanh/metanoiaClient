@@ -40,7 +40,7 @@ export default function Products() {
           )}
           <div className='absolute z-10 flex items-center justify-center w-full h-full'>
             <Link href='/collections/sun-lust'>
-              <a className='text-4xl font-semibold text-white sm:text-5xl md:text-6xl 3xl:text-7xl'>
+              <a className='text-5xl font-semibold text-white sm:text-5xl md:text-6xl 3xl:text-7xl'>
                 <h2 className='font-dancingScript'>Sun Lust</h2>
               </a>
             </Link>

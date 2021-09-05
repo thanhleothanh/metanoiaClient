@@ -61,5 +61,6 @@ export async function getStaticProps({ params: { slug } }) {
     props: {
       collection,
     },
+    revalidate: 86400, //build new static pages each day
   };
 }

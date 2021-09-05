@@ -8,7 +8,7 @@ export default function Navigation({ offsetY }) {
 
   return (
     <nav
-      className='fixed inset-0 z-20 flex items-end justify-between w-full text-metanoiaBlack fixedHeader'
+      className='fixed inset-0 z-20 flex self-end justify-between w-full text-black fixedNavbar'
       style={{
         backgroundColor: `${
           offsetY !== undefined && offsetY === 0 ? 'transparent' : 'white'

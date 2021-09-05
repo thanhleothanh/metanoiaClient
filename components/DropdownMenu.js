@@ -40,19 +40,17 @@ const DropdownMenu = () => {
           display: `${show ? 'inline' : 'none'}`,
         }}
       >
-        <div className='absolute right-0 flex flex-col overflow-hidden font-medium text-right origin-top-right bg-white border-2 w-36'>
+        <div className='absolute right-0 flex flex-col overflow-hidden font-medium text-right origin-top-right bg-white border-2 border-black w-36'>
           <Link href='/products'>
-            <a className='p-3 text-sm hover:text-metanoiaYellow sm:text-base'>
-              Sản phẩm
-            </a>
+            <a className='p-3 text-base hover:text-metanoiaYellow'>Sản phẩm</a>
           </Link>
           <Link href='/collections/sun-lust'>
-            <a className='p-3 text-sm hover:text-metanoiaYellow sm:text-base'>
+            <a className='p-3 text-base hover:text-metanoiaYellow'>
               Bộ sưu tập
             </a>
           </Link>
           <Link href='/about'>
-            <a className='p-3 text-sm hover:text-metanoiaYellow sm:text-base'>
+            <a className='p-3 text-base hover:text-metanoiaYellow'>
               Về chúng mình
             </a>
           </Link>

@@ -19,7 +19,7 @@ export default function Footer() {
       </div>
 
       <div className='text-sm xl:text-base 3xl:text-lg'>
-        &copy; 2021 METANOIA
+        2021 METANOIA &copy;
       </div>
     </footer>
   );
