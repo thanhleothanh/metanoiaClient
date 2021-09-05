@@ -20,7 +20,7 @@ export default function Modal({ show, onClose, children, title }) {
             <i className='fas fa-times fa-lg' />
           </button>
         </div>
-        <div className='self-center px-2 py-2 mx-1 xl:px-6'>{children}</div>
+        <div className='py-2 place-content-center'>{children}</div>
       </div>
     </div>
   ) : null;

@@ -81,7 +81,7 @@ export default function ProductInformation({
         show={sizeGuideModalOpen}
         onClose={() => setSizeGuideModalOpen(false)}
       >
-        <div className='relative w-[330px] h-[450px] md:w-[400px] md:h-[535px]'>
+        <div className='relative w-80 sm:w-96 md:w-101 pb-3/2'>
           <ImageWithBlur
             image={{
               src: '/sizeGuide.jpg',
