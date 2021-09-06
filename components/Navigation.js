@@ -17,7 +17,7 @@ export default function Navigation({ offsetY }) {
       }}
     >
       <Link href='/'>
-        <a className='flex items-center h-full px-5 standalone:pb-4 standalone:items-end 2xl:px-7'>
+        <a className='flex items-center h-full px-5 standalone:pb-5 standalone:items-end 2xl:px-7'>
           <svg
             className='svgWidth'
             viewBox='0 0 2048.000000 280.000000'
@@ -99,7 +99,7 @@ c-25 -57 -66 -80 -130 -73 -85 9 -127 90 -119 223 4 51 11 82 27 108 58 93
           </svg>
         </a>
       </Link>
-      <ul className='items-center hidden h-full px-5 space-x-4 font-medium standalone:pb-4 md:flex standalone:items-end xl:text-lg 2xl:text-xl 3xl:text-2xl'>
+      <ul className='items-center hidden h-full px-5 space-x-4 font-medium standalone:pb-5 md:flex standalone:items-end xl:text-lg 2xl:text-xl 3xl:text-2xl'>
         <li>
           <Link href='/products'>
             <a
@@ -140,7 +140,7 @@ c-25 -57 -66 -80 -130 -73 -85 9 -127 90 -119 223 4 51 11 82 27 108 58 93
           </Link>
         </li>
       </ul>
-      <div className='flex items-center h-full px-5 standalone:items-end standalone:pb-4 md:hidden'>
+      <div className='flex items-center h-full px-5 standalone:items-end standalone:pb-5 md:hidden'>
         <DropdownMenu />
       </div>
     </nav>
